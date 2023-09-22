@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Enter your full name</label>
+                <input type="text" name="" class="fullName" id="fullname" placeholder="Enter your full name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small style="font-size:10px; margin: 0px 5px;">Error msg </small>
+            </div>
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Enter your username</label>
+                <input type="text" name="" class="userName" id="username" placeholder="Enter your username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg </small>
+            </div>
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Enter your Email</label>
+                <input type="email" name="" class="Email" id="email" placeholder="Enter your email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg </small>
+            </div>
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Enter your number</label>
+                <input type="number" name="" class="number" id="number" placeholder="Enter your number">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg </small>
+            </div>
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Enter your password</label>
+                <input type="password" name="" class="password" id="password" placeholder="Enter your password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg </small>
+            </div>
+
+            <div class="form-control">
+                <label style="font-size: 14px;margin: 5px 0px;"> Confirm password</label>
+                <input type="password" name="" class="cpassword" id="cpassword" placeholder="Confirm password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg </small>
+            </div>
+            <div class="eye">
+                <input type="checkbox" class="eye" id="Show" name="" onclick="myFunction()"> Show Password
+            </div>
+
+            <div class="form-control" id="block">
+
+                <label class="dob" style="font-size: 14px;margin: 5px 0px;"> Enter your age</label>
+                <input type="date" id="dob" max='2005-01-01'>
+                <p>Error msg </p>
+            </div>
+            <div> <input type="submit" value="submit" class="btn" id="submit" name=""> </div>
+
+        </form>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
